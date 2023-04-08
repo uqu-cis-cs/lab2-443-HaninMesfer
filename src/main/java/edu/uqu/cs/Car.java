@@ -21,6 +21,8 @@ public class Car{
      * private dataType name;
      *
      */
+     private String model;
+     private boolean inOutGarage;
 
     /************ Part 2 **************/
     /**
@@ -33,7 +35,10 @@ public class Car{
      *      //body
      * }
      */
-
+     public Car(){
+        this.model=" ";
+        this.inOutGarage="false";
+     }
     /************ Part 3 **************/
     /**
      * Define all getter methods below
@@ -43,6 +48,18 @@ public class Car{
      *      return this.InstanceVariableName;
      * }
      */
+     
+         public String getModel (){
+         return this.model;
+         }
+
+
+         public boolean getInOutGarage(){
+         return this.inOutGarage;
+         }
+
+
+
 
 
     /************ Part 4 **************/
@@ -54,7 +71,13 @@ public class Car{
      * }
      *
      */
+       public void setModel(String model){
+          this.model= model;
+       }
 
+       public void setInOutGarage(boolean inOutGarage){
+            this.inOutGarage=inOutGarage ;
+       }
 
     /************ Part 5 **************/
     /**
@@ -63,7 +86,14 @@ public class Car{
      * moveCarIn() to set the inOutGarage flag to true;
      *
      */
+    public void moveCarOut(){
 
+        inOutGarage = false;
+
+    }
+    public void moveCarIn(){
+        inOutGarage= true;
+    }
 
 
 }
